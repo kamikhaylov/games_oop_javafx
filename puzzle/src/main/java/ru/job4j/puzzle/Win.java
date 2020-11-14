@@ -7,6 +7,7 @@ public class Win {
             if (board[index][index] == 1) {
                 if ((monoHorizontal(board, index) || monoVertical(board, index))) {
                     rsl = true;
+                    break;
                 }
             }
         }
