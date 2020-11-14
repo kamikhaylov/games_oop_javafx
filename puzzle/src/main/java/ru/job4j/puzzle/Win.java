@@ -5,11 +5,8 @@ public class Win {
         boolean rsl = false;
         for (int index = 0; index < board.length; index++) {
             if (board[index][index] == 1) {
-                for (int i = 0; i < board.length; i++) {
-                    if ((monoHorizontal(board, i) || monoVertical(board, i))) {
-                        rsl = true;
-                        break;
-                    }
+                if ((monoHorizontal(board, index) || monoVertical(board, index))) {
+                    rsl = true;
                 }
             }
         }
